@@ -2,14 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Attributes\Scope;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Customer extends Model
+class Customer extends Authenticatable
 {
     use HasFactory;
+
     protected $fillable = [
         'name',
         'email',
@@ -37,9 +38,6 @@ class Customer extends Model
         ];
     }
 
-    /**
-     * Scope to only active customers
-     */
     #[Scope]
     protected function active(Builder $query): void
     {
@@ -72,16 +70,16 @@ class Customer extends Model
         return $this->hasMany(CouponUsage::class);
     }
 
-    // Helper Methods
+    // Accessors
     public function getTotalSpentAttribute()
     {
-        return $this->orders()->where('payment_status', 'paid')->sum('total');
+        return $this->orders()
+            ->where('payment_status', 'paid')
+            ->sum('total');
     }
 
     public function getOrdersCountAttribute()
     {
         return $this->orders()->count();
     }
-    
-
 }

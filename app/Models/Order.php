@@ -149,6 +149,7 @@ class Order extends Model
                 'status' => $order->status,
                 'notes' => 'Order created'
             ]);
+            
             //order confirmation email
         });
     }

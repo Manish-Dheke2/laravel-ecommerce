@@ -96,6 +96,9 @@ return [
         'team_foreign_key' => 'team_id',
     ],
 
+    // Add this:
+    'string_length' => 191,  // ← add this line
+
     /*
      * When set to true, the method for checking permissions will be registered on the gate.
      * Set this to false if you want to implement custom logic for checking permissions.
