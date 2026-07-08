@@ -116,4 +116,4 @@ This project is open-sourced software. Feel free to use it for learning purposes
 
 ## 🙌 Acknowledgements
 
-Built as part of a tutorial series on building a full-stack e-commerce app with Laravel, Livewire, Alpine.js, Tailwind CSS, and Filament PHP v4.
+Built as part of my internship, where I got hands-on experience developing a full-stack e-commerce application using Laravel, Livewire, Alpine.js, Tailwind CSS, and Filament PHP v4. This project helped me strengthen my skills in real-world Laravel development, payment integrations, and admin panel design.
