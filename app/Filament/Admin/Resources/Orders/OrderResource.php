@@ -2,6 +2,7 @@
 
 namespace App\Filament\Admin\Resources\Orders;
 
+use App\Filament\Admin\Resources\Orders\Pages;
 use App\Filament\Admin\Resources\Orders\Pages\CreateOrder;
 use App\Filament\Admin\Resources\Orders\Pages\EditOrder;
 use App\Filament\Admin\Resources\Orders\Pages\ListOrders;
