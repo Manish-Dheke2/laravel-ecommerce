@@ -1,15 +1,10 @@
 {
+  "version": 2,
   "outputDirectory": "public",
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/api/index.php"
-    }
+  "builds": [
+    { "src": "api/index.php", "use": "vercel-php@0.7.3" }
   ],
-  "buildCommand": "echo skip..."
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
 }
