@@ -12,7 +12,7 @@ use Filament\Tables\Filters\TrashedFilter;
 use Filament\Tables\Table;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Actions\ViewAction;
-use App\Filament\Resources\Customers\CustomerResource;
+use App\Filament\Admin\Resources\Customers\CustomerResource;
 
 
 class OrdersTable
