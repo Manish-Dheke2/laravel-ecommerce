@@ -8,7 +8,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/api/index.php"
+      "destination": "/api/lambda.php"
     }
   ],
   "buildCommand": "echo skip..."
